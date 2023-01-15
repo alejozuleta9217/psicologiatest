@@ -1,4 +1,4 @@
-class MapFile{
+export default class MapFile{
   
     static fileregistrer (data){
       let location = [];
@@ -21,5 +21,3 @@ class MapFile{
     }  
   
   }
-  
-  module.exports = MapFile

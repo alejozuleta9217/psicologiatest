@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import datafileregistrer from "../common/datarepository";
-import datamodule from "../common/datamodule";
+import datafileregistrer from '../common/datarepository.js';
+import datamodule from "../common/datamodule.js";
 import { Grid, makeStyles, CardMedia } from "@material-ui/core";
 import DataGrid, { Column, Paging } from 'devextreme-react/data-grid'
 import logo from "./Imagotipo_de_la_Universidad_de_la_Amazonia.svg.png";
