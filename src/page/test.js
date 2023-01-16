@@ -152,8 +152,7 @@ const Test = () => {
       const borrarlat = filternotariado[0] + "";
       const borrarlong = filternotariado[1] + "";
       console.log(
-        "borrar la coordenada del array",
-        
+        "borrar la coordenada del array",        
         typeof borrarlat,
         typeof borrarlong,
       );
@@ -163,7 +162,6 @@ const Test = () => {
       setCoordenada(Object.values(coordenadaborrada));
       console.log("borrar la coordenada del array1", coordenadaborrada);
     }
-    //setChecked();
   };
   console.log("verificar", coordenada)
  useEffect(() => {
