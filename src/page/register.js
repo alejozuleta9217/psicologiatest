@@ -297,12 +297,8 @@ const Data = () => {
           alignItems="center"
           className={classes.itemTextFieldceedtext}
         >
-          <a 
-            onClick={ceeddownloaduser}
-            className={classes.botonpass}
-          >
-            Enviar
-          </a>
+          <button href="#" onClick={ceeddownloaduser} className={classes.botonpass}>Enviar</button>
+          
         </Grid>
       </Grid>   
       <Loader open={openLoading}></Loader>   

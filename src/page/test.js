@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect} from "react";
 import { Loader } from "./loader";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import databigsource from "../common/databigtest";
 import databigsourceoptions from "../common/options";
 import {
@@ -100,7 +100,7 @@ const Test = () => {
   const [filebig, setfilebig] = useState([]);
   const [filebigoptions, setfilebigoptions] = useState([]);
   const [coordenada, setCoordenada] = useState([]);
-  const history = useNavigate();
+  //const history = useNavigate();
   let user = localStorage.getItem("identificacion");
   
   const loadStatistics = () => {
@@ -238,7 +238,7 @@ const Test = () => {
                         {row.id_seq_pregunta} - {row.pdescripcion}
                     </Typography>
                 </Grid>  
-                <h1 className={classes.solid}></h1> 
+                <Typography className={classes.solid}></Typography> 
             </Grid>     
         ))}
         </Grid>
@@ -279,12 +279,12 @@ const Test = () => {
           alignItems="center"
           className={classes.itemTextFieldceedtext}
         >
-          <a 
+          <button 
             onClick={ceeddownloaduser}
             className={classes.botonpass}
           >
             Guardar
-          </a>
+          </button>
         </Grid>
       </Grid>   
         
