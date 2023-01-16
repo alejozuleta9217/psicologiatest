@@ -153,6 +153,7 @@ const Test = () => {
       const borrarlong = filternotariado[1] + "";
       console.log(
         "borrar la coordenada del array",
+        
         typeof borrarlat,
         typeof borrarlong,
       );
