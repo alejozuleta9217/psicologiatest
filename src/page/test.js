@@ -115,7 +115,7 @@ const Test = () => {
       )
       .then((response) => {
         if (response.status === 200) {
-          console.log("diego1", response.data.data.preguntasopciones)
+          //console.log("diego1", response.data.data.preguntasopciones)
           setfilebig(response.data.data.preguntasopciones);
         
         }
@@ -163,7 +163,6 @@ const Test = () => {
       console.log("borrar la coordenada del array1", coordenadaborrada);
     }
   };
-  console.log("verificar", coordenada)
  useEffect(() => {
     loadStatistics();
     loadStatisticsoptions();
@@ -173,7 +172,6 @@ const Test = () => {
 
   const ceeddownloaduser = () => {
     let body=coordenada
-    console.log("BODY", body)
      setLoading(true)
      axios.post(
          `https://psicologiaback.azurewebsites.net/RegisterInsertTest`, 
@@ -238,7 +236,7 @@ const Test = () => {
                         {row.id_seq_pregunta} - {row.pdescripcion}
                     </Typography>
                 </Grid>  
-                <Typography className={classes.solid}></Typography> 
+                <p className={classes.solid}></p> 
             </Grid>     
         ))}
         </Grid>
