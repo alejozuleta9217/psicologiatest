@@ -193,7 +193,7 @@ const Cardsmapas = () => {
               variant="filled"
               label="Igresar la Identifición del Candidato"
               type="number"
-            ></TextField>
+            ></TextField>            
             <button href="#" onClick={ceeddownloaduser} className={classes.botonpass}>Enviar</button>
           </Grid>
             <Grid container item xs className={classes.marg2} direction="row">
